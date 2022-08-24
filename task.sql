@@ -1,0 +1,33 @@
+--CREATE DATABASE student_db;
+--use student_db;
+-- CREATE TABLE school(
+--     id INTEGER PRIMARY KEY,name varchar (20),
+--     address varchar(50),principal varchar(20),phone INTEGER
+-- );
+-- CREATE TABLE student(
+--     id INTEGER PRIMARY KEY,name varchar(20),
+--     address varchar(50),phone INTEGER,email varchar(20),
+--     age int,schoolid int,FOREIGN KEY(schoolid) REFERENCES school(id)
+-- );
+--drop TABLE school;
+-- CREATE TABLE school(
+--     id INTEGER PRIMARY KEY, 
+--     name varchar (20),
+--     address varchar(50),
+--     principal varchar(20),
+--     phone int
+-- );
+-- CREATE TABLE student(
+--      id INTEGER PRIMARY KEY,
+--      name varchar(20),
+--      address varchar(50),
+--      phone INT,
+--      email varchar(20),
+--      age int,
+--      schoolid int,
+--      FOREIGN KEY(schoolid) REFERENCES school(id)
+--  );
+--  insert into school VALUES ('1','modern','nigdi','patil','11111'),('2','spm','pune','kale','2222');
+--insert into student VALUES ('1','ashwini','nigdi','9999','ash@efg.com','21','2'),('2','akansha','pune','8888','aka@efg.com','18','1');
+--  select * FROM school;
+--  select * FROM student;
