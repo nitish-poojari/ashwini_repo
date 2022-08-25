@@ -1,4 +1,4 @@
--- USE sales_db;
+--USE sales_db;
 
 -- SELECT * FROM salespeople;
 -- SELECT * FROM customers;
@@ -11,20 +11,20 @@
 --2)Write a query on the Customers table that will find the highest rating in each city. Put the output in
 --this form:
 --For the city (city), the highest rating is : (rating).
---SELECT  city , max(rating) as highest_rating  FROM customers GROUP BY(city);
+--SELECT  city , MAX(rating) as highest_rating  FROM customers GROUP BY(city);
 
 --3)Write a query that totals the orders for each day and places the results in descending order
 --SELECT odate,count(onum)  FROM orders GROUP BY odate ORDER BY count(onum) DESC;
 
 --4)Write a query that selects the total amount in orders for each salesperson for whom this total is
 --greater than the amount of the largest order in the table.
---SELECT sum(amt) as total FROM orders GROUP BY snum HAVING sum(amt)>(SELECT max(amt)FROM orders); 
+--SELECT sum(amt) as total FROM orders GROUP BY snum HAVING sum(amt)>(SELECT MAX(amt)FROM orders); 
 
 --5)Write a query that selects the highest rating in each city
---SELECT max(rating) as max_rating FROM customers GROUP BY city;
+--SELECT MAX(rating) as MAX_rating FROM customers GROUP BY city;
 
 --6)Largest order taken by each salesperson with order value more than Rs.3000. 
---SELECT max(amt) FROM orders GROUP BY snum HAVING max(amt) >3000;
+--SELECT MAX(amt) FROM orders GROUP BY snum HAVING MAX(amt) >3000;
 
 --7)Select each customer smallest order.
---SELECT cnum, min(amt) as min_amount from orders GROUP BY cnum;
+--SELECT cnum, MIN(amt) as min_amount from orders GROUP BY cnum;
