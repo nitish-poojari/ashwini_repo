@@ -1,47 +1,46 @@
 --CREATE DATABASE product_db;
---use product_db;
+--USE product_db;
 
 -- CREATE TABLE categories(
---     id integer primary key,
---     title varchar(30),
---     description varchar(40)
+--    id INTEGER PRIMARY KEY,
+--    title VARCHAR(30),
+--    description VARCHAR(30)
 -- );
 
 -- CREATE TABLE products(
---     id integer primary key,
---     title varchar(30),
---     price int,
---     description varchar(40),
---     category int,
---     company varchar(30),
---     FOREIGN KEY(category)REFERENCES categories(id)
---  );
+--    id INTEGER PRIMARY KEY,
+--    title VARCHAR(30),
+--    price INTEGER,
+--    description VARCHAR(30),
+--    category INTEGER,
+--    company VARCHAR(20)
+--    FOREIGN KEY(category)REFERENCES categories(id)
+-- );
 
 -- CREATE TABLE orders(
---     id integer primary key,
---     total int,
---     date DATE
---  );
+--    id INTEGER PRIMARY KEY,
+--    total INTEGER,
+--    date DATE
+-- );
 
 -- CREATE TABLE order_details(
---     id integer primary key,
---     orderid int,
---     productid int,
---     quantity int,
---     price int,
---     totalprice int,
---     discount int
---     FOREIGN KEY(orderid)REFERENCES orders(id),
---     FOREIGN KEY(productid)REFERENCES products(id)
+--    id INTEGER PRIMARY KEY,
+--    orderId INTEGER,
+--    productId INTEGER,
+--    quantity INTEGER,
+--    price INTEGER,
+--    totalPrice INTEGER,
+--    discount INTEGER,
+--    FOREIGN KEY(orderId)REFERENCES orders(id),
+--    FOREIGN KEY(productId)REFERENCES products(id)
+-- );
 
---  );
+-- INSERT INTO categories VALUES( 1, 'abc','efg'),( 2,'hij','klm');
+--INSERT INTO products VALUES( 1, 'nop',20,'qrs',1,'emtec'),( 2,'tuv',30,'wxy',2,'tcs');
+--INSERT INTO orders VALUES( 1, 2, '2022-08-24'),( 2,3,'2022-08-25');
+--INSERT INTO order_details VALUES( 1, 2, 2, 30, 4, 30*4-20, 20),( 2,1, 1,20,5,20*5-10,10);
 
---insert into categories VALUES('1','abc','abcdef');
---insert into products VALUES('1','xyz','20','qwertr','1','emtec');
---insert into orders VALUES('1','3','2022-08-22');
---insert into order_details VALUES('1','1','1','3','40','30','10');
-
--- select * from categories;
--- select * from products;
--- select * from orders;
--- select * from order_details;
+-- SELECT * FROM categories;
+-- SELECT * FROM products;
+-- SELECT * FROM orders;
+-- SELECT * FROM order_details;
