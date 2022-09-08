@@ -5,8 +5,8 @@ const errorResponse = () => {
 const validator = (validatorFn) => {
     return errorResponse();
 };
-console.log(validator(() => errorResponse()).valid); //=> false
-console.log(validator().error); //=> 'error occurred'
+//console.log(validator(() => errorResponse()).valid) //=> false
+//console.log(validator().error) //=> 'error occurred'
 const val = validator(() => errorResponse()).valid;
 document.getElementById("3").innerHTML = val;
 const val1 = validator().error;

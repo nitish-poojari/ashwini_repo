@@ -19,8 +19,6 @@ class MyArray {
     // console.log(stringAry.getValues())   //=> [ 'aaa', 'ccc' ]
     const str:any = stringAry.getValues();
     document.getElementById("1").innerHTML = str
-
-
     const numberAry = new MyArray()
      numberAry.add(1)
      numberAry.add(2)
@@ -28,9 +26,7 @@ class MyArray {
      numberAry.remove(2)
     // console.log(numberAry.getValues()) //=> [ 1, 3 ]
      const num:any = numberAry.getValues();
-    document.getElementById("1_1").innerHTML = num
-
- 
+    document.getElementById("1_1").innerHTML = num 
      const booleanAry = new MyArray()
      //numberAry.add(true)
      //numberAry.add(false) //=> You shouldn't be able to do these.

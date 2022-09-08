@@ -1,5 +1,4 @@
 "use strict";
-//const n = 20
 let tag = document.createElement("p");
 let flag1 = document.getElementById("6").innerHTML;
 function factorial(n) {
@@ -16,4 +15,4 @@ function main() {
         document.write(`${output} <br>`);
     }
 }
-main();
+//main()

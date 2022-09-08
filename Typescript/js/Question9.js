@@ -1,6 +1,8 @@
 "use strict";
 function translate(str) {
-    console.log(`Original String:` + str);
+    // console.log(`Original String:`+str)
+    const tran = (`Original String:` + str);
+    document.getElementById("9").innerHTML = tran;
     let newStr = " ";
     for (let i = 0; i < str.length; i++) {
         if (str[i] == " ") {
@@ -17,4 +19,4 @@ function translate(str) {
 }
 //console.log(`rövarspråket String:`+translate('this is fun'))
 const trans = (`rövarspråket String:` + translate('this is fun'));
-document.getElementById("9").innerHTML = trans;
+document.getElementById("9_1").innerHTML = trans;

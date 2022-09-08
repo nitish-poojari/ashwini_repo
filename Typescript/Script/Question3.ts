@@ -8,8 +8,8 @@ const errorResponse = (): CustomResponse => {
 const validator = ( validatorFn?: () => CustomResponse ): CustomResponse => {
      return errorResponse()
  }   
-console.log(validator(() => errorResponse()).valid) //=> false
-console.log(validator().error) //=> 'error occurred'
+//console.log(validator(() => errorResponse()).valid) //=> false
+//console.log(validator().error) //=> 'error occurred'
 
 const val:any= validator(() => errorResponse()).valid;
 document.getElementById("3").innerHTML = val

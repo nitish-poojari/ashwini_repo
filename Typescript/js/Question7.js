@@ -46,7 +46,7 @@ class Electronics extends Course {
     }
 }
 const c1 = new Computer('Computer', 400000, ['JavaSript', 'Html/CSS', 'Data Structure']);
-console.log(c1);
+//console.log(c1)
 //const c2:any= (c1)
 let myString = JSON.stringify(c1);
 document.getElementById("7").innerHTML = myString;
