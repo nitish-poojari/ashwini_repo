@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+  <title>Javascript</title>
+</head>
+
+<body onload="somefunc()">
+  <center>
+    <h1>Javascript Assignments</h1>
+    <br />
+    <br />
+  </center>
+  <!--Question 1-->
+  <section>
+    <div>
+      <h4>1) Create a function that takes two numbers as arguments and returns their sum</h4>
+      <h3 id="1" class="ml-5"></h3>
+    </div>
+    <hr>
+  </section>
+  <!--Question 2-->
+  <section>
+    <div>
+      <h4>2) Create a function that takes voltage and current and returns the calculated power</h4>
+      <h3 id="2" class="ml-5"></h3>
+    </div>
+    <hr>
+  </section>
+  <!--Question 3-->
+  <section>
+    <div>
+      <h4>3) Write a function that takes an integer minutes and converts it to seconds</h4>
+      <h3 id="3" class="ml-5"></h3>
+    </div>
+    <hr>
+  </section>
+  <!--Question 4-->
+  <section>
+    <div>
+      <h4>4) Write a function that takes the base and height of a triangle and return its area</h4>
+      <h3 id="4" class="ml-5"></h3>
+    </div>
+    <hr>
+  </section>
+  <!--Question 5-->
+  <section>
+    <div>
+      <h4>5) Create a function that takes the age in years and returns the age in days</h4>
+      <h3 id="5" class="ml-5"></h3>
+    </div>
+    <hr>
+  </section>
+  <!--Question 6-->
+  <section>
+    <div>
+      <h4>6) create a function to swap two parameters</h4>
+      <h3 id="6" class="ml-5"></h3>
+    </div>
+    <hr>
+  </section>
+  <!--Question 7-->
+  <section>
+    <div>
+      <h4>7) create a function to find out a maximum from an array</h4>
+      <h3 id="7" class="ml-5"></h3>
+    </div>
+    <hr>
+  </section>
+  <!--Question 8-->
+  <section>
+    <div>
+      <h4>8) create a function to find out a minimum from an array</h4>
+      <h3 id="8" class="ml-5"></h3>
+    </div>
+    <hr>
+  </section>
+  <!--Question 9-->
+  <section>
+    <div>
+      <h4>9) Write a function which checks given input/parameter:
+        If input/parameter is divisible by 3 print => Fizz
+        If input/parameter is divisible by 5 print => Buzz
+        If input/parameter is divisible by 3 or 5 print => FizzBuzz
+        input/parameter is NOT divisible by 3 or 5 print => given Input Number/Value
+        If input/parameter is other than Number/Value print => 'Nan Not a Number! Please Input
+        Number</h4>
+      <h3 id="9" class="ml-5"></h3>
+    </div>
+    <hr>
+  </section>
+  <!--Question 10-->
+  <section>
+    <div>
+      <h4>10) Write a function which checks number till given input/parameter is odd or even</h4>
+      <h3 id="10" class="ml-5"></h3>
+    </div>
+    <hr>
+  </section>
+  <!--Question 11-->
+  <section>
+    <div>
+      <h4>11) Write a function which Calculate the sum of multiples of 3 and 5 for a given limit</h4>
+      <h3 id="11" class="ml-5"></h3>
+    </div>
+    <hr>
+  </section>
+  <!--Question 12-->
+  <section>
+    <div>
+      <h4>12) Write a function which show or print Prime Number upto provided range</h4>
+      <h3 id="12" class="ml-5"></h3>
+      <button onclick="showPrimeNumbers(20)">Prime Numbers</button>
+    </div>
+    <hr>
+  </section>
+  <!--Question 13-->
+  <section>
+    <div>
+      <h4>13) Write a function which Calculate the sum of marks provided in an array, average it and also show
+        Grade
+        Grade criteria/mechanism is:
+        0% to 70% = > D Grade
+        71% to 79% => C Grade
+        81% to 89% => B Grade
+        91% to 100% => A Grade</h4>
+      <h3 id="13" class="ml-5"></h3>
+    </div>
+    <hr>
+  </section>
+  <!--Question 14-->
+  <section>
+    <div>
+      <h4>14) Write a function which Prints/Shows star (or any pattern) for the number of times and rows provided
+      </h4>
+      <div id="14" class="ml-5"></div>
+      <button onclick="showPattern(5)">Show Pattern</button>
+    </div>
+  </section>
+  <script>
+    function somefunc() {
+      addition(3, 2)
+      circuitPower(230, 10)
+      convert(5)
+      triArea(3, 2)
+      calcAge(65)
+      swap(10, 20)
+      const numbers = [10, 21, 5, 25, 6, 60, 23, 26, 49, 98]
+      findMax(numbers)
+      const numbers1 = [10, 21, 5, 25, 6, 60, 23, 26, 49, 98]
+      findMin(numbers1)
+      isfizzBuzz('one')
+      // isfizzBuzz(true)
+      // isfizzBuzz(9)
+      // isfizzBuzz(10) 
+      // isfizzBuzz(30)
+      // isfizzBuzz(11)
+      checkOddEven(10)
+      sum0fMultiples(10)
+      const marks = [55, 85, 55, 65]
+      calculateGrades(marks)
+
+    }
+  </script>
+
+  <script src="Script/Question1.js"></script>
+  <script src="Script/Question2.js"></script>
+  <script src="Script/Question3.js"></script>
+  <script src="Script/Question4.js"></script>
+  <script src="Script/Question5.js"></script>
+  <script src="Script/Question6.js"></script>
+  <script src="Script/Question7.js"></script>
+  <script src="Script/Question8.js"></script>
+  <script src="Script/Question9.js"></script>
+  <script src="Script/Question10.js"></script>
+  <script src="Script/Question11.js"></script>
+  <script src="Script/Question12.js"></script>
+  <script src="Script/Question13.js"></script>
+  <script src="Script/Question14.js"></script>
+
+</body>
+
+</html>
